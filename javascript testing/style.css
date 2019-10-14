@@ -29,10 +29,10 @@ div {
     background-color: red;
     font-size: 100px;
     color: white;
-    -webkit-transition: top 0.2s ease;
-    -moz-transition: top 0.2s ease;
-    -o-transition: top 0.2s ease;
-    transition: top 0.2s ease;
+    -webkit-transition: top 0.1s ease;
+    -moz-transition: top 0.1s ease;
+    -o-transition: top 0.1s ease;
+    transition: top 0.1s ease;
 }
 p {
     font-size: 50px;
