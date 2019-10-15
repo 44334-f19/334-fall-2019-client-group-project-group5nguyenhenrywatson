@@ -13,6 +13,7 @@
 var temp = 0; //last scroll position
 $(window).scroll(function() {
     var logoheight = $("#logo").outerHeight();
+    var headerheight = $("#header").outerHeight();
     var scroll = $(window).scrollTop();
     //if the header is scrolled all the way past or if scroll down
     if ((scroll > document.getElementById("header").offsetTop + 300) && (temp < scroll)) { 
@@ -33,7 +34,8 @@ $(window).scroll(function() {
             $("#header").removeClass("sticky");
         }
         //if the user doesn't scroll fast enough to reveal the header and if they are near the top of the page, show the header regardless
-        if ($(element).is(":hidden") && (500 >= scroll)) {
+        if ($("#header").is(":hidden") && (logoheight + headerheight >= scroll)) {
+            $("#header").removeClass("sticky");
             $("#header").show();
         }
     }
