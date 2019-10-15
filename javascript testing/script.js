@@ -15,20 +15,22 @@ var scrolled = false;
 $(window).scroll(function() {
     var logoheight = $("#logo").outerHeight();
     var scroll = $(window).scrollTop();
-    if (($(window).scrollTop() > document.getElementById("header").offsetTop + 300) && (temp < scroll)) { //if the header is scrolled all the way past
+    //if the header is scrolled all the way past or if scroll down
+    if (($(window).scrollTop() > document.getElementById("header").offsetTop + 300) && (temp < scroll)) { 
+        //hiding and preparing for css transition when shown(scroll up)
         $("#header").addClass("sticky");
         $("#header").hide();
-        $(".sticky").css("top", "-200px"); //hiding and preparing for css transition when shown(scroll up)
-        console.log("hide");
+        $(".sticky").css("top", "-200px"); 
     }
     if (temp > scroll) { //if the last scroll position is greater than the current
-        var deadzone = temp - 50; //added deadzone to requre the user to scroll at a certain speed for the header to show up
+        //deadzone to requre the user to scroll at a certain speed for the header to show up
+        var deadzone = temp - 50; 
         if (deadzone > scroll) {
-            console.log("show")
             $("#header").show();
             $(".sticky").css("top", "0px"); //show header (slide down transition)
         }
-        if (logoheight >= $(window).scrollTop()) { //returning header back to its default position when you scroll to the top of the page
+        //returning header back to its default position when you scroll to the top of the page
+        if (logoheight >= $(window).scrollTop()) { 
             $("#header").removeClass("sticky");
         }
     }
