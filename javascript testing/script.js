@@ -11,12 +11,11 @@
 
 //sticky header only on scroll up (with deadzone)
 var temp = 0; //last scroll position
-var scrolled = false;
 $(window).scroll(function() {
     var logoheight = $("#logo").outerHeight();
     var scroll = $(window).scrollTop();
     //if the header is scrolled all the way past or if scroll down
-    if (($(window).scrollTop() > document.getElementById("header").offsetTop + 300) && (temp < scroll)) { 
+    if ((scroll > document.getElementById("header").offsetTop + 300) && (temp < scroll)) { 
         //hiding and preparing for css transition when shown(scroll up)
         $("#header").addClass("sticky");
         $("#header").hide();
@@ -30,7 +29,7 @@ $(window).scroll(function() {
             $(".sticky").css("top", "0px"); //show header (slide down transition)
         }
         //returning header back to its default position when you scroll to the top of the page
-        if (logoheight >= $(window).scrollTop()) { 
+        if (logoheight >= scroll) { 
             $("#header").removeClass("sticky");
         }
     }
