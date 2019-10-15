@@ -23,7 +23,7 @@ $(window).scroll(function() {
     }
     if (temp > scroll) { //if the last scroll position is greater than the current
         //deadzone to requre the user to scroll at a certain speed for the header to show up
-        var deadzone = temp - 50; 
+        var deadzone = temp - 40; 
         if (deadzone > scroll) {
             $("#header").show();
             $(".sticky").css("top", "0px"); //show header (slide down transition)
