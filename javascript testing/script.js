@@ -32,6 +32,10 @@ $(window).scroll(function() {
         if (logoheight >= scroll) { 
             $("#header").removeClass("sticky");
         }
+        //if the user doesn't scroll fast enough to reveal the header and if they are near the top of the page, show the header regardless
+        if ($(element).is(":hidden") && (500 >= scroll)) {
+            $("#header").show();
+        }
     }
     temp = $(window).scrollTop(); //updating last scroll position
 });
