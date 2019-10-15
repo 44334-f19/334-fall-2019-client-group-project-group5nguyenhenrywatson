@@ -22,7 +22,7 @@ $(window).scroll(function() {
         console.log("hide");
     }
     if (temp > scroll) { //if the last scroll position is greater than the current
-        var deadzone = temp - 75; //added deadzone to requre the user to scroll at a certain speed for the header to show up
+        var deadzone = temp - 50; //added deadzone to requre the user to scroll at a certain speed for the header to show up
         if (deadzone > scroll) {
             console.log("show")
             $("#header").show();
