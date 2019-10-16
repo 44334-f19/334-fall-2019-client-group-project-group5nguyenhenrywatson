@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-size: 50px;
+}
+#logowrapper {
+    height: 150px;
+    text-align: center;
+}
+#yorkilogo {
+    height: 150px;
+}
+#headwrapper {
+    height: 30px;
+    position: relative;
+    text-align: center;
+}
+#header {
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    font-size: 30px;
+    color: white;
+    -webkit-transition: top 0.1s ease;
+    -moz-transition: top 0.1s ease;
+    -o-transition: top 0.1s ease;
+    transition: top 0.1s ease;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+}
