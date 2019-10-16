@@ -19,7 +19,12 @@ $(window).scroll(function() {
     if ((scroll > document.getElementById("header").offsetTop + 300) && (temp < scroll)) { 
         //hiding and preparing for css transition when shown(scroll up)
         $("#header").addClass("sticky");
-        $("#header").hide();
+        //adding animation for when you scroll down
+        if (scroll <= headerheight + logoheight + 100) {
+            $("#header").hide();
+        } else {
+            $("#header").slideUp();
+        }
         $(".sticky").css("top", "-200px"); 
     }
     if (temp > scroll) { //if the last scroll position is greater than the current
