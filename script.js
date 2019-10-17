@@ -5,7 +5,7 @@ $(window).scroll(function() {
     var headerheight = $("#header").outerHeight();
     var scroll = $(window).scrollTop();
     //if the header is scrolled all the way past or if scroll down
-    if ((scroll > document.getElementById("header").offsetTop + 180) && (temp < scroll)) { 
+    if ((scroll > document.getElementById("header").offsetTop + (headerheight + logoheight)) && (temp < scroll)) { 
         //hiding and preparing for css transition when shown(scroll up)
         $("#header").addClass("sticky");
         //adding animation for when you scroll down
@@ -14,7 +14,7 @@ $(window).scroll(function() {
         } else {
             $("#header").slideUp();
         }
-        $(".sticky").css("top", "-30px"); 
+        $(".sticky").css("top", "-" + headerheight + "px"); 
     }
     if (temp > scroll) { //if the last scroll position is greater than the current
         //deadzone to requre the user to scroll at a certain speed for the header to show up
