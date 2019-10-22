@@ -10,6 +10,10 @@ p {font-family: freight-text-pro, serif;
     font-weight: 300;   
     font-style: normal;
     font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 #logowrapper {
     height: 300px;
@@ -25,7 +29,7 @@ p {font-family: freight-text-pro, serif;
 }
 #header {
     width: 100%;
-    height: 40px;
+    height: 50px;
     background-color: white;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
@@ -55,8 +59,8 @@ p {font-family: freight-text-pro, serif;
     padding: 0px 0px 0px 0px;
 }
 #navlinks li {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 0.25px solid black;
+    border-right: 0.25px solid black;
     height: 35px;
     flex: 2;
 }
@@ -136,4 +140,14 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-#headerphoto
+#aboutlist {margin-top: -20px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+            margin-right: 50px;}
+
+body ul li a:link {text-decoration: none;
+                    color:black;}
+body ul li a:visited {text-decoration: none;
+                    color:black;}
+body ul li a:hover {text-decoration: none;
+                    color:black;}
