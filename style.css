@@ -10,14 +10,13 @@ p {font-family: freight-text-pro, serif;
     font-weight: 300;   
     font-style: normal;
     font-size: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 50px;
 }
 #logowrapper {
     height: 300px;
     text-align: center;
+    padding-top: 20px;
+    margin-bottom: 35px;
 }
 #yorkilogo {
     height: 300px;
@@ -59,8 +58,8 @@ p {font-family: freight-text-pro, serif;
     padding: 0px 0px 0px 0px;
 }
 #navlinks li {
-    border-left: 0.25px solid black;
-    border-right: 0.25px solid black;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
     height: 35px;
     flex: 2;
 }
@@ -73,17 +72,19 @@ h2 {font-family: acumin-pro-semi-condensed, sans-serif;
 h1 {font-family: acumin-pro-semi-condensed, sans-serif;
     text-align: center;
     font-size: 45px;
-    font-weight: 500;
+    font-weight: 700;
     color: #003366;
-    padding-top: 35px}
+    padding-top: 35px;}
 
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
+
+
 /* Slideshow container */
-.slideshow-container {
+.slideshow-container {padding-top: 30px;
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -115,7 +116,6 @@ img {vertical-align: middle;}
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
 
 /* Fading animation */
 .fade {
@@ -150,26 +150,52 @@ body ul li a:link {text-decoration: none;
 body ul li a:visited {text-decoration: none;
                     color:black;}
 body ul li a:hover {text-decoration: none;
-                    color:black;}
+                    color: #808080;}
 
+
+/*INDEX PAGE BRIEF DESCRIPTION*/
+#indexdesc {margin-left:100px;
+            margin-right:100px;
+            margin-top: -40px;
+            text-align: center;}
+
+
+
+/*FOOTER INFO*/
 footer {display: flex;
 		 padding: 10px;
-		 clear: both;
         border-top: 1px solid #000000;
 }
 
-footer h2 {font-family: acumin-pro-semi-condensed, sans-serif;
-            font-size: 20px;
-            font-weight: 500;
-            color: #003366;}
+h3 {font-family: acumin-pro-semi-condensed, sans-serif;
+            font-size: 25px;
+            font-weight: 700;
+            color: #003366;
+            padding-bottom: -20px}
 
-#footermap {flex: 3;
-            margin-left: 75px;
-            padding-top: 20px;}
-#footercontact {flex: 3;
-                border-right: 0.75px solid #000000;}
-#footersocial {flex: 2;
-                border-right: 0.75px solid #000000
-            }
-#footernav {flex: 2;
-            margin-right: 50px;}
+#footermap {flex: 2.5;
+            margin-left: 150px;
+            padding-top: 20px;
+            margin-right: -50px;}
+#footercontact {flex: 2.5;
+                border-right: 0.5px solid #808080;
+                margin-left: 75px;}
+#footersocial {flex: 2.5;
+                border-right: 0.5px solid #808080;
+                margin-left: 35px;
+                padding-left: -20px;
+                padding-bottom: -50px}
+#footernav {flex: 2.5;
+            margin-right: 50px;
+            margin-left: 35px;
+            padding-left: -20px;}
+#footertext {margin: -50px;}
+
+footer p {font-family: acumin-pro-semi-condensed, sans-serif;}
+
+footer a:link {text-decoration: none;
+                    color:black;}
+footer a:visited {text-decoration: none;
+                    color:black;}
+footer a:hover {text-decoration: none;
+                    color: #808080;}
