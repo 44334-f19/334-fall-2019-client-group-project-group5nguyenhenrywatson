@@ -2,7 +2,8 @@ $(document).ready(function() {
     //sticky header only on scroll up (with deadzone)
     var temp = 0; //last scroll position
     $(window).scroll(function() {
-        var logoheight = $("#yorkilogo").outerHeight();
+        var logoheight = $("#yorkilogo").outerHeight() + parseInt($("#logowrapper").css("margin-top")) + parseInt($("#logowrapper").css("margin-bottom"));
+        console.log(logoheight);
         var headerheight = $("#header").outerHeight();
         var scroll = $(window).scrollTop();
         //if the header is scrolled all the way past or if scroll down
