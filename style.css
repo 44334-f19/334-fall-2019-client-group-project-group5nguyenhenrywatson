@@ -17,7 +17,7 @@ p {font-family: freight-text-pro, serif;
 #logowrapper {
     height: 300px;
     text-align: center;
-    padding-top: 20px;
+    margin-top: 20px;
     margin-bottom: 35px;
 }
 #yorkilogo {
@@ -51,6 +51,7 @@ p {font-family: freight-text-pro, serif;
     position: fixed;
     top: 0;
     box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    z-index: 11
 }
 #navlinks {
     display: flex;
@@ -61,16 +62,19 @@ p {font-family: freight-text-pro, serif;
 }
 
 #navlinks li, #aboutcontainer {
-    border-left: 0.25px solid black;
-    border-right: 0.25px solid black;
+    /*border-left: 0.25px solid black;
+    border-right: 0.25px solid black;*/
+    border-left: 1px solid black;
     height: 35px;
     width: 200px;
     position: relative;
-    margin-left: -1px;
+    /*margin-left: -1px;*/
 }
-#about {
-    margin-left: -1px;
-    border: none !important;
+#navlinks li:last-of-type {
+    border-right: 1px solid black;
+}
+#navlinks div li {
+    border-right: none !important;
 }
 #aboutcontainer {
     height: 50px;
@@ -87,13 +91,14 @@ p {font-family: freight-text-pro, serif;
     background-color: white;
     box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.3);
     width: 200px;
-    margin-left: 2px;
+    margin-left: -1px;
 }
 #dropdown li {
     border: solid black;
     border-width: 0px 1px 1px 1px;
     height: 50px;
     padding-top: 5px;
+    width: 201px;
 }
 /*#aboutcontainer:hover #dropdown {
     display: block;
@@ -189,6 +194,9 @@ body ul li a:visited {text-decoration: none;
                     color:black;}
 body ul li a:hover {text-decoration: none;
                     color: #808080;}
+#aboutlist {font-family: freight-text-pro, serif;
+    font-weight: 300;   
+    font-size: 20px;}
 
 .fa {
   padding: 14px;
@@ -275,4 +283,50 @@ footer a:visited {text-decoration: none;
 footer a:hover {text-decoration: none;
                     color: #808080;}
 
+
+/*Media Queries*/
+@media only screen and (min-width: 1025px){
+    #mobilefooter {display:none;}
+}
+
+@media only screen and (max-width: 1024px) {
+	body { margin: 0;}                                                           
+    h1 { font-size: 250%;}
+    h2 {font-size: 100%}
+	p {margin: 50px;
+        font-size: 100%;}
+    #aboutlist {font-size: 90%}
+    footer {display: flex;
+		 padding: 10px;
+        border-top: 1px solid #000000;}
+    h3 {font-family: acumin-pro-semi-condensed, sans-serif;
+            font-size: 25px;
+            font-weight: 700;
+            color: #003366;
+            padding-bottom: -20px}
+    #footermap {flex: 2.5;
+            margin-left: 150px;
+            padding-top: 20px;
+            margin-right: -50px;}
+    #footercontact {flex: 2.5;
+                border-right: 0.5px solid #808080;
+                margin-left: 75px;}
+    #footersocial {flex: 2.5;
+                border-right: 0.5px solid #808080;
+                margin-left: 35px;
+                padding-left: -20px;
+                padding-bottom: -50px}
+    #footernav {flex: 2.5;
+            margin-right: 50px;
+            margin-left: 35px;
+            padding-left: -20px;}
+    #footertext {margin: -50px;}
+    #mobilefooter {display:none;}
+} 
+@media only screen and (max-width: 768px) { 
+	h1 { font-size: 175%; }
+    h2 {font-size: 100%}
+    #footermap, #footercontact, #footernav, #footersocial {display:none;}
+    #mobilefooter {display: inline;}
+	}
 
