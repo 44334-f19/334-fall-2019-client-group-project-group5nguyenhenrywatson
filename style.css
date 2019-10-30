@@ -220,6 +220,13 @@ body ul li a:hover {text-decoration: none;
   color: white;
 }
 
+/*CONTACT MAP*/
+#contactmap {
+    flex: auto
+    margin-right:;
+    margin-top:;
+    text-align: right;
+}
 
 /*INDEX PAGE BRIEF DESCRIPTION*/
 #indexdesc {margin-left:100px;
