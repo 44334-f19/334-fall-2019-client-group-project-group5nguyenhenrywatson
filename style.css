@@ -276,6 +276,13 @@ footer a:visited {text-decoration: none;
 footer a:hover {text-decoration: none;
                     color: #808080;}
 
+#facebook, #instagram, #twitter {width: 30px;
+            height: 30px;
+            opacity: 0.75;}
+#facebook:hover {opacity: 0.5}
+#instagram:hover {opacity: 0.5}
+#twitter:hover {opacity: 0.5}
+
 
 /*Media Queries*/
 @media only screen and (min-width: 1025px){
@@ -288,6 +295,10 @@ footer a:hover {text-decoration: none;
     h2 {font-size: 100%}
 	p {margin: 50px;
         font-size: 100%;}
+    #indexdesc {margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                font-size: 100%}
     #aboutlist {font-size: 90%}
     footer {display: flex;
 		 padding: 10px;
@@ -316,10 +327,12 @@ footer a:hover {text-decoration: none;
     #footertext {margin: -50px;}
     #mobilefooter {display:none;}
 } 
+
 @media only screen and (max-width: 768px) { 
 	h1 { font-size: 175%; }
     h2 {font-size: 100%}
     #footermap, #footercontact, #footernav, #footersocial {display:none;}
-    #mobilefooter {display: inline;}
+    #mobilefooter {display: inline-block;
+                   margin: auto;}
 	}
 
