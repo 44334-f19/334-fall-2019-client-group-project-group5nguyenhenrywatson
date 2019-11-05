@@ -13,24 +13,25 @@ p {font-family: freight-text-pro, serif;
     margin: 50px;
 }
 
+
 /*nav styles*/
 #logowrapper {
-    height: 150px;
+    height: 175px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 35px;
 }
 #yorkilogo {
-    height: 150px;
+    height: 175px;
 }
 #headwrapper {
-    height: 20px;
+    height: 40px;
     position: relative;
     text-align: center;
 }
 #header {
     width: 100%;
-    height: 30px;
+    height: 40px;
     background-color: white;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
@@ -51,10 +52,6 @@ p {font-family: freight-text-pro, serif;
     top: 0;
     box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
     z-index: 11;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
     /*width: 1000px !important;*/
 }
 #navlinks {
@@ -63,8 +60,8 @@ p {font-family: freight-text-pro, serif;
     justify-content: center;
     margin: 0;
     padding: 0;
+    margin-top: 4px;
 }
-
 #navlinks li, #aboutcontainer {
     /*border-left: 0.25px solid black;
     border-right: 0.25px solid black;*/
@@ -72,35 +69,32 @@ p {font-family: freight-text-pro, serif;
     height: 29px;
     width: 200px;
     position: relative;
-    /*margin-left: -1px;*/
-}
-#navlinks li:last-of-type {
-    border-right: 1px solid black;
-}
-#navlinks div li {
-    border-right: none !important;
 }
 #aboutcontainer {
-    height: 30px;
+    height: 40px;
     border: none;
 }
 #dropdown {
     display: none;
     z-index: 10;
     list-style-type: none;
-    margin: 0;
+    margin-top: 6px;
     padding: 0;
     position: absolute;
     background-color: white;
     box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.3);
-    width: 200px;
+    width: 201px;
     margin-left: -1px;
 }
 #dropdown li {
     border: solid black;
     border-width: 0px 1px 1px 1px;
-    height: 30px;
-    width: 200px;
+    height: 40px;
+    width: 201px;
+    padding-top: 4px;
+}
+#last {
+    border-right: 1px solid black;
 }
 /*#aboutcontainer:hover #dropdown {
     display: block;
@@ -290,21 +284,22 @@ h3 {font-family: acumin-pro-semi-condensed, sans-serif;
             padding-bottom: -20px}
 
 #footermap {flex: 2.5;
-            margin-left: 150px;
+            padding-left: 10%;
             padding-top: 20px;
             margin-right: -50px;}
 #footercontact {flex: 2.5;
                 border-right: 0.5px solid #808080;
-                margin-left: 75px;}
+                padding-left: 3%;
+                margin-left: 6%;
+                padding-right: 3%}
 #footersocial {flex: 2.5;
                 border-right: 0.5px solid #808080;
-                margin-left: 35px;
-                padding-left: -20px;
+                padding-left: 3%;
+                padding-right: 3%;
                 padding-bottom: -50px}
 #footernav {flex: 2.5;
-            margin-right: 50px;
-            margin-left: 35px;
-            padding-left: -20px;}
+            padding-right: 8%;
+            padding-left: 3%}
 #footertext {margin: -50px;}
 
 footer p {font-family: acumin-pro-semi-condensed, sans-serif;}
@@ -348,29 +343,28 @@ footer a:hover {text-decoration: none;
             font-weight: 700;
             color: #003366;
             padding-bottom: -20px}
-    #footermap {flex: 2.5;
-            margin-left: 150px;
-            padding-top: 20px;
-            margin-right: -50px;}
-    #footercontact {flex: 2.5;
-                border-right: 0.5px solid #808080;
-                margin-left: 75px;}
-    #footersocial {flex: 2.5;
-                border-right: 0.5px solid #808080;
-                margin-left: 35px;
-                padding-left: -20px;
-                padding-bottom: -50px}
-    #footernav {flex: 2.5;
-            margin-right: 50px;
-            margin-left: 35px;
-            padding-left: -20px;}
-    #footertext {margin: -50px;}
     #mobilefooter {display:none;}
 } 
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #logowrapper {height: 150px;
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-bottom: 35px;}
+    #yorkilogo {height: 150px;}
+    #footermap, #footercontact, #footernav, #footersocial {display:none;}
+    #mobilefooter {display: inline-block;
+                   margin: auto;}
+}
+
+@media only screen and (max-width: 767px) { 
 	h1 { font-size: 175%; }
     h2 {font-size: 100%}
+    #logowrapper {height: 150px;
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-bottom: 35px;}
+    #yorkilogo {height: 150px;}
     #footermap, #footercontact, #footernav, #footersocial {display:none;}
     #mobilefooter {display: inline-block;
                    margin: auto;}
