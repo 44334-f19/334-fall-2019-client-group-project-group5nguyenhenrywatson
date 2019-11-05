@@ -240,23 +240,12 @@ body ul li a:hover {text-decoration: none;
 
 .flex-container.box {
     width: 50%;
-    margin: 10px;
+    margin: 40px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
 }
 
-#contactmap {
-   display: flex;
-   padding:30px;
-} 
-
-#contactmap { 
-    flex: 3.5;
-    margin-left: 530px;
-    padding-top: 80px;
-    margin-right:90px; 
-}
 
 /*INDEX PAGE BRIEF DESCRIPTION*/
 #indexdesc {margin-left:100px;
