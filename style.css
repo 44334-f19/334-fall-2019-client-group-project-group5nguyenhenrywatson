@@ -65,7 +65,7 @@ p {font-family: freight-text-pro, serif;
     /*border-left: 0.25px solid black;
     border-right: 0.25px solid black;*/
     border-left: 1px solid black;
-    height: 29;
+    height: 29px;
     width: 200px;
     position: relative;
 }
@@ -91,6 +91,9 @@ p {font-family: freight-text-pro, serif;
     height: 40px;
     width: 201px;
     padding-top: 4px;
+}
+#last {
+    border-right: 1px solid black;
 }
 /*#aboutcontainer:hover #dropdown {
     display: block;
