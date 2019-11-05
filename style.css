@@ -262,18 +262,18 @@ h3 {font-family: acumin-pro-semi-condensed, sans-serif;
             padding-bottom: -20px}
 
 #footermap {flex: 2.5;
-            padding-left: 8%;
+            padding-left: 10%;
             padding-top: 20px;
             margin-right: -50px;}
 #footercontact {flex: 2.5;
                 border-right: 0.5px solid #808080;
                 padding-left: 3%;
-                margin-left: 3%;
+                margin-left: 6%;
                 padding-right: 3%}
 #footersocial {flex: 2.5;
                 border-right: 0.5px solid #808080;
                 padding-left: 3%;
-                margin-right: 3%;
+                padding-right: 3%;
                 padding-bottom: -50px}
 #footernav {flex: 2.5;
             padding-right: 8%;
