@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    var width = $(window).width();
     //sticky header only on scroll up (with deadzone)
     var temp = 0; //last scroll position
     $(window).scroll(function() {
@@ -37,12 +38,21 @@ $(document).ready(function() {
         }
         temp = $(window).scrollTop(); //updating last scroll position
     });
-
     //js slide dropdown menu
-    $("#aboutcontainer").hover(function() {
-        $("#dropdown").slideDown(200);
-    }, function() {
-        $("#dropdown").slideUp(200);
+    $(window).resize(function() {
+        width = $(window).width();
     });
+    if (width > 1000) {
+        $("#navlinks").css("display", "flex");
+        $("#aboutcontainer").hover(function() {
+            $("#dropdown").slideDown(200);
+        }, function() {
+            $("#dropdown").slideUp(200);
+        });
+    } else {
+        $("#menubutton").click(function() {
+            $("#navlinks").slideToggle(200);
+        });
+    }
 });
 
