@@ -92,6 +92,13 @@ p {font-family: freight-text-pro, serif;
     width: 201px;
     padding-top: 4px;
 }
+.mobile {
+    display: none;
+    padding-left: 15px;
+}
+#menubutton {
+    display: none;
+}
 #last {
     border-right: 1px solid black;
 }
@@ -228,7 +235,7 @@ body ul li a:hover {text-decoration: none;
 .flex-container {
    display:flex;
    flex: none;
-   background color: #ffff;
+   background-color: #ffff;
 }
 
 .flex-container.box {
@@ -345,5 +352,43 @@ footer a:hover {text-decoration: none;
     #footermap, #footercontact, #footernav, #footersocial {display:none;}
     #mobilefooter {display: inline-block;
                    margin: auto;}
-	}
+    }
+@media only screen and (max-width: 1000px) {
+    #header, #headwrapper {
+        height: 40px;
+        border: none;
+        background-color: lightgray;
+    }
+    #navlinks {
+        flex-wrap: wrap;
+        text-align: left;
+        margin-top: 40px;
+        background-color: white;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        justify-content: left;
+        padding-left: 10px;
+        display: none;
+    }
+    #navlinks li, #aboutcontainer {
+        height: 30px;
+        width: 100%;
+        border: none;
+    }
+    #aboutcontainer {
+        width: 50px;
+    }
+    #last {
+        border: none;
+    }
+    .mobile {
+        display: block;
+    }
+    #menubutton {
+        display: block;
+        float: right;
+        margin-right: 10px;
+    }
+}
 
