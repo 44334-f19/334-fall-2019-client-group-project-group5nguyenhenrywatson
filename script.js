@@ -16,6 +16,7 @@ $(document).ready(function() {
                 $("#header").hide();
             } else {
                 $("#header").slideUp();
+                $("#navlinks").hide();
             }
             $(".sticky").css("top", "-" + headerheight + "px"); 
         }
