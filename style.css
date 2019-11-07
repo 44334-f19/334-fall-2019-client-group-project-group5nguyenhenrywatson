@@ -381,10 +381,13 @@ footer a:hover {text-decoration: none;
                    margin: auto;}
     }
 @media only screen and (max-width: 1000px) {
+    #header {
+        border-bottom: 1px solid black !important;
+        border-top: 1px solid black !important;
+    }
     #header, #headwrapper {
         height: 40px;
         border: none;
-        background-color: lightgray;
     }
     #navlinks {
         flex-wrap: wrap;
@@ -396,26 +399,26 @@ footer a:hover {text-decoration: none;
         width: 100%;
         justify-content: left;
         padding-left: 10px;
+        padding-right: 10px;
         display: none;
     }
     #navlinks li, #aboutcontainer {
         height: 30px;
         width: 100%;
         border: none;
-    }
-    #aboutcontainer {
-        width: 50px;
+        border-bottom: 1px solid black;
     }
     #last {
-        border: none;
+        border: none !important;
     }
     .mobile {
         display: block;
     }
     #menubutton {
         display: block;
-        float: right;
-        margin-right: 10px;
+        float: left;
+        margin-left: 10px;
+        cursor: pointer;
     }
     #dropdown {
         display: none !important;
