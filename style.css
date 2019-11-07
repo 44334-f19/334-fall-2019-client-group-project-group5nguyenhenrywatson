@@ -401,6 +401,7 @@ footer a:hover {text-decoration: none;
         padding-left: 10px;
         padding-right: 10px;
         display: none;
+        box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.3);
     }
     #navlinks li, #aboutcontainer {
         height: 30px;
