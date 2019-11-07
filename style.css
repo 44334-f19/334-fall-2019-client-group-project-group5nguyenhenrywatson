@@ -375,7 +375,6 @@ footer a:hover {text-decoration: none;
     #footermap, #footercontact, #footernav, #footersocial {display:none;}
     #mobilefooter {display: inline-block;
                    margin: auto;}
-    .slideshow-container {display: inline-block;}
 }
 
 @media only screen and (max-width: 767px) { 
