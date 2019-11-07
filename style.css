@@ -13,6 +13,13 @@ p {font-family: freight-text-pro, serif;
     margin: 50px;
 }
 
+a:link {text-decoration: none;
+                    color:#202020;}
+a:visited {text-decoration: none;
+                    color:#202020;}
+a:hover {text-decoration: none;
+                    color: #808080;}
+
 
 /*nav styles*/
 #logowrapper {
@@ -188,8 +195,10 @@ img {vertical-align: middle;}
 
 #aboutlist {margin-top: -20px;
             margin-bottom: 50px;
-            margin-left: 50px;
-            margin-right: 50px;}
+            margin-left: 65px;
+            margin-right: 50px;
+            padding-left: 20px;
+            border-left: 1px solid #808080}
 
 body ul li a:link {text-decoration: none;
                     color:black;}
@@ -235,7 +244,7 @@ body ul li a:hover {text-decoration: none;
 
 .flex-container {
    display:flex;
-   flex: none;
+   flex: auto;
 }
 
 .flex-container.box {
@@ -248,17 +257,17 @@ body ul li a:hover {text-decoration: none;
 #map {
     flex: 3.5;
     margin-left: 210px;
-    padding-top: -60px;
-    margin-right: 10px;
+    margin-right: 50px;
     padding-bottom: 50px;
+    margin-top: 50px;
 }
 
 #contact {
-    flex: 2.5;
     margin-left: 150px;
     margin-right: -15px;
     margin-top: 60px;
     padding-bottom: -15px;
+    width: 25%;
 } 
 
 #contactinfo {
@@ -366,6 +375,7 @@ footer a:hover {text-decoration: none;
     #footermap, #footercontact, #footernav, #footersocial {display:none;}
     #mobilefooter {display: inline-block;
                    margin: auto;}
+    .slideshow-container {display: inline-block;}
 }
 
 @media only screen and (max-width: 767px) { 
