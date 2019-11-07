@@ -16,6 +16,7 @@ $(document).ready(function() {
                 $("#header").hide();
             } else {
                 $("#header").slideUp();
+                $("#navlinks").hide();
             }
             $(".sticky").css("top", "-" + headerheight + "px"); 
         }
@@ -41,18 +42,28 @@ $(document).ready(function() {
     //js slide dropdown menu
     $(window).resize(function() {
         width = $(window).width();
+        if (width > 1000) { //if the window is resized to above 1000
+            $("#navlinks").css("display", "flex"); //display the desktop version of nav
+            $("#aboutcontainer").hover(function() {
+                $("#dropdown").slideDown(200);
+            }, function() {
+                $("#dropdown").slideUp(200);
+            });
+        } else { //if window is resized to below 1000, hide menu and display mobile hamburger
+            $("#navlinks").hide();
+        }
     });
+    //if user hasnt resized the window and theyre on desktop (normal dropdown function)
     if (width > 1000) {
-        $("#navlinks").css("display", "flex");
         $("#aboutcontainer").hover(function() {
             $("#dropdown").slideDown(200);
         }, function() {
             $("#dropdown").slideUp(200);
         });
-    } else {
-        $("#menubutton").click(function() {
-            $("#navlinks").slideToggle(200);
-        });
     }
+    //mobile
+    $("#menubutton").click(function() { //mobile hamburger animation
+        $("#navlinks").slideToggle(200);
+    });
 });
 
