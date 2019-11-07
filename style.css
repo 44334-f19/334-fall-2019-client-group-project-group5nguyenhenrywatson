@@ -267,6 +267,10 @@ body ul li a:hover {text-decoration: none;
     margin-right: -40px;
     margin-top: 0px;
     padding-bottom: -25px;
+    font-family: freight-text-pro, serif;
+    font-weight: 300;   
+    font-style: normal;
+    font-size: 20px;
 }
 
 
