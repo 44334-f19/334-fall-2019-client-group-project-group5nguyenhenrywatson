@@ -92,6 +92,7 @@ a:hover {text-decoration: none;
     box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.3);
     width: 201px;
     margin-left: -1px;
+    z-index: 9;
 }
 #dropdown li {
     border: solid black;
@@ -408,8 +409,6 @@ footer a:hover {text-decoration: none;
         z-index: 10;
         width: 100%;
         justify-content: left;
-        padding-left: 10px;
-        padding-right: 10px;
         display: none;
         box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.3);
     }
@@ -418,9 +417,7 @@ footer a:hover {text-decoration: none;
         width: 100%;
         border: none;
         border-bottom: 1px solid black;
-    }
-    #last {
-        border: none !important;
+        padding-left: 10px;
     }
     .mobile {
         display: block;
