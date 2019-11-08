@@ -16,7 +16,9 @@ $(document).ready(function() {
                 $("#header").hide();
             } else {
                 $("#header").slideUp();
-                $("#navlinks").hide();
+                if (width < 1000) {
+                    $("#navlinks").hide();
+                }
             }
             $(".sticky").css("top", "-" + headerheight + "px"); 
         }
