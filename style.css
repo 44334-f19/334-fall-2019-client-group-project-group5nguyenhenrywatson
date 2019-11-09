@@ -111,6 +111,10 @@ a:hover {text-decoration: none;
 #last {
     border-right: 1px solid black;
 }
+#hamburger {
+    margin-top: 4px;
+    max-height: 30px;
+}
 /*#aboutcontainer:hover #dropdown {
     display: block;
     visibility: visible;
