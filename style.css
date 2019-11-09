@@ -122,6 +122,45 @@ a:hover {text-decoration: none;
 }*/
 /*----*/
 
+/*puppy pages*/
+.puppy {
+    width: 1000px;
+    height: 500px;
+    border-top: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+hr {
+    border-top: 1px solid black;
+}
+#puppycontainer {
+    margin-top: 50px;
+}
+#puppypic, #puppypic img {
+    width: 500px;
+}
+#puppyinfo {
+    width: 500px;
+}
+#puppyinfo ul {
+    padding: 0;
+    margin: 0;
+}
+#puppyinfo ul li {
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 30px;
+    font-family: acumin-pro-semi-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+}
+#puppyinfo h3 {
+    padding-left: 20px;
+}
+/*----*/
+
 h2 {font-family: acumin-pro-semi-condensed, sans-serif;
     font-size: 20px;
     font-style: italic;
@@ -439,4 +478,3 @@ footer a:hover {text-decoration: none;
         padding: 0 !important;
     }
 }
-
