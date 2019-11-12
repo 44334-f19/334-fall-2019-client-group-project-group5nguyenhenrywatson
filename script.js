@@ -41,10 +41,12 @@ $(document).ready(function() {
         }
         temp = $(window).scrollTop(); //updating last scroll position
     });
+
+    
     //js slide dropdown menu
     $(window).resize(function() {
         width = $(window).width();
-        if (width > 1000) { //if the window is resized to above 1000
+        if (width > 1024) { //if the window is resized to above 1000
             $("#navlinks").css("display", "flex"); //display the desktop version of nav
             $("#aboutcontainer").hover(function() {
                 $("#dropdown").slideDown(200);
@@ -56,7 +58,7 @@ $(document).ready(function() {
         }
     });
     //if user hasnt resized the window and theyre on desktop (normal dropdown function)
-    if (width > 1000) {
+    if (width > 1024) {
         $("#aboutcontainer").hover(function() {
             $("#dropdown").slideDown(200);
         }, function() {
@@ -68,4 +70,5 @@ $(document).ready(function() {
         $("#navlinks").slideToggle(200);
     });
 });
+
 
