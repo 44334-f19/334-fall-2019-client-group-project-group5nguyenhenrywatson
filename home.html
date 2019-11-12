@@ -1,7 +1,7 @@
-!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parti Yorkies of the Grove</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/snf1sap.css">
@@ -11,31 +11,41 @@
 </head>
 <body>
     <div id="logowrapper">
-        <img id="yorkilogo" src="src/yorkilogo.png" alt="Yorki Logo">
+        <img id="yorkilogo" src="src/YorkieLogo.png" alt="Yorkie Logo">
     </div>
     <div id="headwrapper">
         <div id="header">
+            <div id="menubutton"><img id="hamburger" src="hamburger.jpg"></div>
             <ul id="navlinks">
-                <li>HOME</li>
-                <li>PUPPIES</li>
-                <li>PARENT DOGS</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="puppies.html">PUPPIES</a></li>
+                <li><a href="parents.html">PARENT DOGS</a></li>
+                <div id="aboutcontainer">
+                    <li id="about"><a href="about.html">ABOUT</a>
+                      <ul id="dropdown">
+                        <li><a href="aboutFam.html">THE FAMILY</a></li>
+                        <li><a href="aboutYorkie.html">YORKIES</a></li>
+                      </ul>
+                    </li>
+                </div>
+                <li class="mobile"><a href="aboutFam.html">&rdsh;THE FAMILY</a></li>
+                <li class="mobile"><a href="aboutYorkie.html">&rdsh;YORKIES</a></li>
+                <li id="last"><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
     </div>
-   <br>  
    
+<br>
 <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="IMG_8877.jpg" style="width:100%">
+  <img src="IMG_8893.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="IMG_8893.jpg" style="width:100%">
+  <img src="IMG_8877.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
@@ -70,19 +80,48 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
 </script>
-
+    <div id="indexdesc">
+        <p>Welcome to Parti Yorkies of the Grove! We're a family-oriented, family-run business with a lot of love for animals and even more love for Parti Yorkies. Looking for a Parti Yorkie to call your own? You've come to the right place - browse our website to meet the family, learn more about this specific breed of Yorkie, and see our puppies/litters. Enjoy!</p>
+    </div>
 </body>
-</html>
+<footer>
+    <div id="footermap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36958.237942925196!2d-94.49186629104982!3d39.061488271683764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c1138c4bc6e255%3A0x710f64bbe1e3e50!2sOak%20Grove%2C%20MO!5e0!3m2!1sen!2sus!4v1572981775634!5m2!1sen!2sus" width="230" height="200" frameborder="0" style="border:0;"></iframe>
+    </div>
+    <div id="footercontact">
+        <h3>COME FIND US</h3>
+        <div id="footertext">
+            <p><b>PARTI YORKIES OF THE GROVE</b><br>LOCATED IN OAK GROVE (KCMO)<br><b>T: </b><a href="tel:000-000-0000">000.000.0000</a></p>
+        </div>
+    </div>
+    <div id="footersocial">
+        <h3>FOLLOW US ON SOCIAL MEDIA</h3>
+        <div id="footertext">
+            <p><a href="facebook.com" target="_blank">FACEBOOK</a><br><a href="twitter.com" target="_blank">TWITTER</a><br><a href="instagram.com" target="_blank">INSTAGRAM</a></p>
+        </div>
+    </div>
+    <div id="footernav">
+    <h3>MENU</h3>
+        <div id="footertext">
+        <p><a href="puppies.html">PUPPIES</a><br>
+            <a href="parents.html">PARENT DOGS</a><br>
+            <a href="about.html">ABOUT</a><br>
+            <a href="contact.html">CONTACT</a></p>
+        </div>
+    </div>
+    <div id="mobilefooter">
+        <a href="#" target="_blank"><img src="facebook.png" id="facebook" alt="Facebook icon"></a>
+        <a href="#" target="_blank"><img src="instagram.png" id="instagram" alt="Instagram icon"></a>
+        <a href="#" target="_blank"><img src="twitter.png" id="twitter" alt="Twitter icon"></a>
+    </div>
+</footer>
+</html> 
