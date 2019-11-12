@@ -254,6 +254,8 @@ body ul li a:hover {text-decoration: none;
     font-weight: 300;   
     font-size: 20px;}
 
+
+
 /*CONTACT PAGE INFO*/
 .fa {
   padding: 14px;
@@ -315,6 +317,7 @@ body ul li a:hover {text-decoration: none;
     padding-bottom: -15px;
     width: 25%;
 } 
+#contact h1 {text-align: left;}
 
 #contactinfo {
     flex: 2.5;
@@ -329,11 +332,13 @@ body ul li a:hover {text-decoration: none;
 }
 
 
+
 /*INDEX PAGE BRIEF DESCRIPTION*/
 #indexdesc {margin-left:100px;
             margin-right:100px;
             margin-top: -40px;
             text-align: center;}
+
 
 
 
@@ -508,9 +513,7 @@ footer a:hover {text-decoration: none;
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    .flex-container {}
-    
-    #contact {text-align: center;}
+    #mobilemedia {display: none;}
     
 }
 
@@ -525,6 +528,7 @@ footer a:hover {text-decoration: none;
     #footermap, #footercontact, #footernav, #footersocial {display:none;}
     #mobilefooter {display: inline-block;
                    margin: auto;}
-    #contact {text-align: center;}
+    #mobilemedia, #map {display: none;}
     }
+
     
