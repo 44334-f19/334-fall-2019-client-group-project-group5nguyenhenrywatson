@@ -284,6 +284,8 @@ body ul li a:hover {text-decoration: none;
   color: white;
 }
 
+
+
 /*CONTACT PAGE*/
 
 .flex-container {
@@ -506,6 +508,9 @@ footer a:hover {text-decoration: none;
         padding-top: 15px;
         padding-bottom: 15px;
     }
+    .flex-container {}
+    
+    #contact {text-align: center;}
     
 }
 
@@ -520,5 +525,6 @@ footer a:hover {text-decoration: none;
     #footermap, #footercontact, #footernav, #footersocial {display:none;}
     #mobilefooter {display: inline-block;
                    margin: auto;}
+    #contact {text-align: center;}
     }
     
