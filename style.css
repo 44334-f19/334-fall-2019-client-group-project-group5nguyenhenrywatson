@@ -408,32 +408,7 @@ footer a:hover {text-decoration: none;
             color: #003366;
             padding-bottom: -20px}
     #mobilefooter {display:none;}
-} 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    #logowrapper {height: 150px;
-                    text-align: center;
-                    margin-top: 20px;
-                    margin-bottom: 35px;}
-    #yorkilogo {height: 150px;}
-    #footermap, #footercontact, #footernav, #footersocial {display:none;}
-    #mobilefooter {display: inline-block;
-                   margin: auto;}
-}
-
-@media only screen and (max-width: 767px) { 
-	h1 { font-size: 175%; }
-    h2 {font-size: 100%}
-    #logowrapper {height: 150px;
-                    text-align: center;
-                    margin-top: 20px;
-                    margin-bottom: 35px;}
-    #yorkilogo {height: 150px;}
-    #footermap, #footercontact, #footernav, #footersocial {display:none;}
-    #mobilefooter {display: inline-block;
-                   margin: auto;}
-    }
-@media only screen and (max-width: 1000px) {
     #header {
         border-bottom: 1px solid black !important;
         border-top: 1px solid black !important;
@@ -477,4 +452,73 @@ footer a:hover {text-decoration: none;
     #aboutcontainer {
         padding: 0 !important;
     }
+    .puppy {
+        flex-direction: column;
+        width: 300px;
+        height: 600px;
+        justify-content: flex-start;
+    }
+    #puppypic, #puppypic img {
+        max-width: 300px;
+        max-height: 300px;
+        text-align: center;
+    }
+    #puppyinfo {
+        max-height: 300px;
+        width: 300px;
+    }
+    #puppyinfo h3 {
+        margin: 0;
+    }
+    #puppyinfo ul li {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    
+} 
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #logowrapper {height: 150px;
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-bottom: 35px;}
+    #yorkilogo {height: 150px;}
+    #footermap, #footercontact, #footernav, #footersocial {display:none;}
+    #mobilefooter {display: inline-block;
+                   margin: auto;}
+    .puppy {
+        flex-direction: column;
+        width: 500px;
+        height: 700px;
+        justify-content: flex-start;
+    }
+    #puppypic, #puppypic img {
+        max-width: 500px;
+        max-height: 500px;
+        text-align: center;
+    }
+    #puppyinfo {
+        max-height: 300px;
+        width: 500px;
+    }
+    #puppyinfo ul li {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
 }
+
+@media only screen and (max-width: 767px) { 
+	h1 { font-size: 175%; }
+    h2 {font-size: 100%}
+    #logowrapper {height: 150px;
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-bottom: 35px;}
+    #yorkilogo {height: 150px;}
+    #footermap, #footercontact, #footernav, #footersocial {display:none;}
+    #mobilefooter {display: inline-block;
+                   margin: auto;}
+    }
+    
