@@ -237,10 +237,7 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-#aboutlist {margin-top: -20px;
-            margin-bottom: 50px;
-            margin-left: 65px;
-            margin-right: 50px;
+#aboutlist {margin: -20px 50px 50px 65px;
             padding-left: 20px;
             border-left: 1px solid #808080}
 
