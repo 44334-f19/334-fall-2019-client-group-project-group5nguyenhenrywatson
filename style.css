@@ -511,6 +511,9 @@ footer a:hover {text-decoration: none;
         padding-bottom: 15px;
     }
     #mobilemedia {display: none;}
+    .flex-container.box {width: 50%;
+                        margin: 40px 40px 40px -50px;
+                        text-align: center;}
     
 }
 
@@ -526,6 +529,8 @@ footer a:hover {text-decoration: none;
     #mobilefooter {display: inline-block;
                    margin: auto;}
     #mobilemedia, #map {display: none;}
+    .flex-container.box {width: 50%;
+                        margin: 40px 40px 40px -50px;
+                        text-align: center;}
     }
-
     
