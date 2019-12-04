@@ -239,17 +239,17 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-#aboutlist {margin: -20px 50px 50px 65px;
-            padding-left: 20px;
+#list {margin: -20px 50px 50px 65px;
+            padding-left: 10px;
             border-left: 1px solid #808080}
-
+#faq {margin: -20px 50px 20px 50px;}
 body ul li a:link {text-decoration: none;
                     color:black;}
 body ul li a:visited {text-decoration: none;
                     color:black;}
 body ul li a:hover {text-decoration: none;
                     color: #808080;}
-#aboutlist {font-family: freight-text-pro, serif;
+#list {font-family: freight-text-pro, serif;
     font-weight: 300;   
     font-size: 20px;}
 
@@ -404,7 +404,7 @@ footer a:hover {text-decoration: none;
                 margin-right: 20px;
                 margin-bottom: 20px;
                 font-size: 100%}
-    #aboutlist {font-size: 90%}
+    #list {font-size: 90%}
     footer {display: flex;
 		 padding: 10px;
         border-top: 1px solid #000000;}
