@@ -332,8 +332,8 @@ body ul li a:hover {text-decoration: none;
 
 
 
-/*INDEX PAGE BRIEF DESCRIPTION*/
-#indexdesc {margin-left:100px;
+/*INDEX AND PUPPY PAGE BRIEF DESCRIPTION*/
+#briefdesc {margin-left:100px;
             margin-right:100px;
             margin-top: -40px;
             text-align: center;}
