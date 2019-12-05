@@ -129,7 +129,8 @@ a:hover {text-decoration: none;
     border-top: 1px solid black;
     margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-content: stretch;
 }
 hr {
     border-top: 1px solid black;
@@ -138,10 +139,10 @@ hr {
     margin-top: 50px;
 }
 #puppypic, #puppypic img {
-    width: 500px;
+    max-height: 450px;
 }
 #puppyinfo {
-    width: 500px;
+    flex-grow: 1;
 }
 #puppyinfo ul {
     padding: 0;
